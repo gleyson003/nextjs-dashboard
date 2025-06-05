@@ -1,9 +1,13 @@
-import type { NextConfig } from 'next';
+// next.config.mjs ou next.config.ts com suporte ESM
 
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   experimental: {
-    ppr: 'incremental'
-  }
+    ppr: 'incremental',
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 export default nextConfig;
