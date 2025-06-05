@@ -1,6 +1,5 @@
-// next.config.mjs ou next.config.ts com suporte ESM
+import type { NextConfig } from 'next';
 
-/** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
     ppr: 'incremental',
